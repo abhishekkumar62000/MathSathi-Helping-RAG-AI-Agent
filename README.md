@@ -1,59 +1,9 @@
-# 🧠 Math Tutor Agent – Agentic RAG with Feedback Loop
+<img width="1024" height="1024" alt="Logo" src="https://github.com/user-attachments/assets/9f592b1f-c290-4ab8-9f72-a319f9d456a3" />
+<img width="1916" height="1066" alt="App Page 1" src="https://github.com/user-attachments/assets/6d8d107c-3e98-4b75-9e01-86985ad780e0" />
 
-This project implements an **Agentic-RAG architecture** to simulate a math professor that solves **JEE-level math questions** with step-by-step explanations. The system smartly routes queries between a vector database and web search, applies input/output guardrails, and incorporates human feedback for continuous learning.
+Our App:-- https://mathsathi-rag-ai-agent.streamlit.app/
 
-## 📌 Features
-
-- ✅ **Input Guardrails** (DSPy): Accepts only academic math questions.
-- 📚 **Knowledge Base Search**: Uses **Qdrant Vector DB** with OpenAI Embeddings to match known questions.
-- 🌐 **Web Fallback**: Integrates **Tavily API** when no good match is found.
-- ✍️ **GPT-4.1 Explanations**: Generates step-by-step math solutions.
-- 🛡️ **Output Guardrails**: Filters for correctness and safety.
-- 👍 **Human-in-the-Loop Feedback**: Users rate answers (Yes/No), logged for future learning.
-- 📊 **Benchmarking**: Evaluated on **JEEBench** dataset with adjustable question limits.
-- 💻 **Streamlit UI**: Interactive dashboard with multiple tabs.
-
-## 🚀 Architecture Flow
-<img width="465" alt="Screenshot 2025-05-04 at 3 45 58 PM" src="https://github.com/user-attachments/assets/c0a9e612-2ef0-413c-b779-c99fe9f48619" />
-
-
-## 📚 Knowledge Base
-
-- **Dataset:** [JEEBench (HuggingFace)](https://huggingface.co/datasets/daman1209arora/jeebench)
-- **Vector DB:** Qdrant (with OpenAI Embeddings)
-- **Storage:** Built with `llama-index` to persist embeddings and perform top-1 similarity search
-
-## 🌐 Web Search
-
-- Uses **Tavily API** for fallback search when the KB doesn't contain a good match
-- Fetched content is piped into **GPT-4o** for clean explanation
-
-
-## 🔐 Guardrails
-
-- **Input Guardrail (DSPy):** Accepts only math-related academic questions
-- **Output Guardrail (DSPy):** Blocks hallucinated or off-topic content
-
-
-## 👨‍🏫 Human-in-the-Loop Feedback
-
-- Streamlit UI allows students to give 👍 / 👎 after seeing the answer
-- Feedback is logged to a local JSON file for future improvement
-
-## 📊 Benchmarking
-
-- Evaluated on **50 random JEEBench Math Questions**
-- **Current Accuracy:** 66%
-- Benchmark results saved to: `benchmark/results.csv`
-
-
-## 🚀 Demo 
-
-To run the app with Streamlit:
-
-```bash
-streamlit run app/streamlit.py
-
+<img width="1914" height="1074" alt="App Page 2" src="https://github.com/user-attachments/assets/8c993486-4479-478f-98dc-536f735ac389" />
 
 
 
