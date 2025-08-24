@@ -76,7 +76,7 @@ with st.sidebar:
             {f"<img src='data:image/png;base64,{encoded_ai_logo}' alt='AI' style='width:210px;height:210px;margin-bottom:8px;object-fit:cover;'>" if encoded_ai_logo else "<div style='color:#ff4b4b;'>AI.png not found</div>"}
         </div>
         <div class='sidebar-dev'>
-            <div style='color:#ffd200;font-size:1.05em;font-family:sans-serif;font-weight:bold;margin-bottom:4px;'>👨‍💻 Developer: Abhishek Yadav</div>
+            <div style='color:#ffd200;font-size:1.02em;font-family:sans-serif;font-weight:bold;margin-bottom:4px;'>👨‍💻 Developer: Abhishek Yadav</div>
             {f"<img src='data:image/jpeg;base64,{encoded_dev_pic}' alt='Abhishek Yadav' style='width:100%;max-width:210px;display:block;margin-left:auto;margin-right:auto;margin-bottom:4px;'>" if encoded_dev_pic else "<div style='color:#ff4b4b;'>pic.jpg not found</div>"}
         </div>
         """,
