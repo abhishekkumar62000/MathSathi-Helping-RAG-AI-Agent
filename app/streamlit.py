@@ -78,7 +78,7 @@ with st.sidebar:
         </div>
         <div class='sidebar-dev'>
             <div style='color:#ffd200;font-size:1.05em;font-family:sans-serif;font-weight:bold;margin-bottom:4px;'>👨‍💻 Developer: Abhishek Yadav</div>
-            {f"<img src='data:image/jpeg;base64,{encoded_dev_pic}' alt='Abhishek Yadav' style='width:110px;height:110px;margin-bottom:4px;object-fit:cover;'>" if encoded_dev_pic else "<div style='color:#ff4b4b;'>pic.jpg not found</div>"}
+            {f"<img src='data:image/jpeg;base64,{encoded_dev_pic}' alt='Abhishek Yadav' style='width:210px;height:210px;margin-bottom:4px;object-fit:cover;'>" if encoded_dev_pic else "<div style='color:#ff4b4b;'>pic.jpg not found</div>"}
         </div>
         """,
         unsafe_allow_html=True
