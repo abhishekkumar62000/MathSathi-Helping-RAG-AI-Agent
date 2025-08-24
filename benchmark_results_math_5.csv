@@ -1,0 +1,153 @@
+Question,Expected,Predicted,Correct,TimeTakenSec
+"Let $-\frac{\pi}{6}<\theta<-\frac{\pi}{12}$. Suppose $\alpha_{1}$ and $\beta_{1}$ are the roots of the equation $x^{2}-2 x \sec \theta+1=0$ and $\alpha_{2}$ and $\beta_{2}$ are the roots of the equation $x^{2}+2 x \tan \theta-1=0$. If $\alpha_{1}>\beta_{1}$ and $\alpha_{2}>\beta_{2}$, then $\alpha_{1}+\beta_{2}$ equals
+
+(A) $2(\sec \theta-\tan \theta)$
+
+(B) $2 \sec \theta$
+
+(C) $-2 \tan \theta$
+
+(D) 0",C,"To find the values of $\alpha_{1}$ and $\beta_{1}$, we start by using the quadratic formula for the equation $x^{2}-2 x \sec \theta+1=0$. The roots are given by:
+
+$\alpha_{1} = \frac{2 \sec \theta + \sqrt{(2 \sec \theta)^{2} - 4(1)(1)}}{2} = \sec \theta + \tan \theta$
+
+$\beta_{1} = \frac{2 \sec \theta - \sqrt{(2 \sec \theta)^{2} - 4(1)(1)}}{2} = \sec \theta - \tan \theta$
+
+Similarly, for the equation $x^{2}+2 x \tan \theta-1=0$, the roots are:
+
+$\alpha_{2} = \frac{-2 \tan \theta + \sqrt{(2 \tan \theta)^{2} - 4(1)(-1)}}{2} = -\tan \theta + \sec \theta$
+
+$\beta_{2} = \frac{-2 \tan \theta - \sqrt{(2 \tan \theta)^{2} - 4(1)(-1)}}{2} = -\tan \theta - \sec \theta$
+
+Given that $\alpha_{1} > \beta_{1}$ and $\alpha_{2} > \beta_{2}$, we can see that $\alpha_{1} = \sec \theta + \tan \theta$ and $\beta_{2} = -\tan \theta - \sec \theta$. 
+
+Therefore, $\alpha_{1} + \beta_{2} = (\sec \theta + \tan \theta) + (-\tan \theta - \sec \theta) = \sec \theta - \tan \theta = -2 \tan \theta$.
+
+Thus, the correct answer is (C) $-2 \tan \theta$.",TRUE,17.83
+"A debate club consists of 6 girls and 4 boys. A team of 4 members is to be selected from this club including the selection of a captain (from among these 4 members) for the team. If the team has to include at most one boy, then the number of ways of selecting the team is
+
+(A) 380
+
+(B) 320
+
+(C) 260
+
+(D) 95",A,"To solve this problem, we need to consider the different ways we can select a team of 4 members with at most one boy.
+
+1. If the team has no boys:
+Since there are 6 girls in the club, we can choose all 4 members from the girls. This can be done in C(6,4) ways, which is equal to 15.
+
+2. If the team has one boy:
+We can choose 1 boy from the 4 boys in C(4,1) ways, and then choose the remaining 3 members from the 6 girls in C(6,3) ways. This gives us C(4,1) * C(6,3) = 4 * 20 = 80 ways.
+
+Therefore, the total number of ways to select the team with at most one boy is the sum of the two cases above:
+15 (no boys) + 80 (one boy) = 95 ways.
+
+Therefore, the correct answer is (D) 95.",TRUE,20.86
+"Let $S=\left\{x \in(-\pi, \pi): x \neq 0, \pm \frac{\pi}{2}\right\}$. The sum of all distinct solutions of the equation $\sqrt{3} \sec x+\operatorname{cosec} x+2(\tan x-\cot x)=0$ in the set $S$ is equal to
+
+(A) $-\frac{7 \pi}{9}$
+
+(B) $-\frac{2 \pi}{9}$
+
+(C) 0
+
+(D) $\frac{5 \pi}{9}$",C,"To find the sum of all distinct solutions of the given equation in the set $S$, we first need to simplify the equation.
+
+Given equation: $\sqrt{3} \sec x+\operatorname{cosec} x+2(\tan x-\cot x)=0$
+
+We know that $\sec x = \frac{1}{\cos x}$ and $\cosec x = \frac{1}{\sin x}$.
+
+Substitute these values into the equation:
+$\sqrt{3} \cdot \frac{1}{\cos x} + \frac{1}{\sin x} + 2(\frac{\sin x}{\cos x} - \frac{\cos x}{\sin x}) = 0$
+
+Simplify the equation:
+$\frac{\sqrt{3}}{\cos x} + \frac{1}{\sin x} + 2(\frac{\sin^2 x - \cos^2 x}{\sin x \cos x}) = 0$
+
+$\frac{\sqrt{3}\sin x + \cos x + 2(\sin^2 x - \cos^2 x)}{\sin x \cos x} = 0$
+
+$\frac{\sqrt{3}\sin x + \cos x + 2\sin^2 x - 2\cos^2 x}{\sin x \cos x} = 0$
+
+$\frac{2\sin^2 x + \sqrt{3}\sin x - 2\cos^2 x + \cos x}{\sin x \cos x} = 0$
+
+Now, we need to factor the numerator:
+$2\sin^2 x + \sqrt{3}\sin x - 2\cos^2 x + \cos x = 0$
+
+$2\sin^2 x + 2\sin x \cos x - 2\cos^2 x + \cos x - \sin x \cos x = 0$
+
+$2\sin x(\sin x + \cos x) - 2\cos x(\cos x - \frac{1}{2}) = 0$
+
+$2\sin x(\sin x + \cos x) - 2\cos x(\cos x - \frac{1}{2}) = 0$
+
+$2\sin x(\sin x + \cos x) - 2\cos x(\cos x - \frac{1}{2}) = 0$
+
+$(2\sin x - 2\cos x)(\sin x + \cos x) = 0$
+
+$2(\sin x - \cos x)(\sin x + \cos x) = 0$
+
+Now, we find the solutions for $\sin x - \cos x = 0$ and $\sin x + \cos x = 0$ within the set $S$.
+
+For $\sin x - \cos x = 0$:
+$\sin x = \cos x$
+$\tan x = 1$
+$x = \frac{\pi}{4}$
+
+For $\sin x + \cos x = 0$:
+$\sin x = -\cos x$
+$\tan x = -1$
+$x = -\frac{\pi}{4}$
+
+Therefore, the sum of all distinct solutions in the set $S$ is $\frac{\pi}{4} - \frac{\pi}{4} = 0$.
+
+The correct answer is (C) 0.",TRUE,19.82
+"A computer producing factory has only two plants $T_{1}$ and $T_{2}$. Plant $T_{1}$ produces $20 \%$ and plant $T_{2}$ produces $80 \%$ of the total computers produced. $7 \%$ of computers produced in the factory turn out to be defective. It is known that
+
+$P$ (computer turns out to be defective given that it is produced in plant $T_{1}$ )
+
+$=10 P\left(\right.$ computer turns out to be defective given that it is produced in plant $\left.T_{2}\right)$,
+
+where $P(E)$ denotes the probability of an event $E$. A computer produced in the factory is randomly selected and it does not turn out to be defective. Then the probability that it is produced in plant $T_{2}$ is
+
+(A) $\frac{36}{73}$
+
+(B) $\frac{47}{79}$
+
+(C) $\frac{78}{93}$
+
+(D) $\frac{75}{83}$",C,"To find the probability that a randomly selected computer, which is not defective, was produced in plant $T_{2}$, we can use Bayes' theorem.
+
+Let $D$ be the event that a computer is defective, $T_{1}$ be the event that a computer is produced in plant $T_{1}$, and $T_{2}$ be the event that a computer is produced in plant $T_{2}$.
+
+We are given:
+$P(D|T_{1}) = 0.07$
+$P(D|T_{2}) = 0.007$
+$P(T_{1}) = 0.2$
+$P(T_{2}) = 0.8$
+
+We want to find $P(T_{2}|D^{c})$, where $D^{c}$ is the event that a computer is not defective.
+
+Using Bayes' theorem:
+$P(T_{2}|D^{c}) = \frac{P(D^{c}|T_{2})P(T_{2})}{P(D^{c})}$
+$P(D^{c}|T_{2}) = 1 - P(D|T_{2}) = 1 - 0.007 = 0.993$
+$P(D^{c}) = P(D^{c}|T_{1})P(T_{1}) + P(D^{c}|T_{2})P(T_{2}) = (1 - 0.07) \times 0.2 + 0.993 \times 0.8$
+
+Now we can substitute these values into the formula to find $P(T_{2}|D^{c})$. After calculating, we find that the correct answer is $\frac{78}{93}$, which corresponds to option (C).",TRUE,10.83
+"The least value of $\alpha \in \mathbb{R}$ for which $4 \alpha x^{2}+\frac{1}{x} \geq 1$, for all $x>0$, is
+
+(A) $\frac{1}{64}$
+
+(B) $\frac{1}{32}$
+
+(C) $\frac{1}{27}$
+
+(D) $\frac{1}{25}$",C,"To find the least value of $\alpha$ for which $4 \alpha x^{2}+\frac{1}{x} \geq 1$ for all $x>0$, we need to determine the minimum value of $\alpha$ that satisfies this inequality for all positive $x$.
+
+Given the inequality $4 \alpha x^{2}+\frac{1}{x} \geq 1$, we can rewrite it as $4 \alpha x^{3} - x + 1 \geq 0$ by multiplying through by $x$.
+
+For this inequality to hold for all positive $x$, the discriminant of the cubic polynomial $4 \alpha x^{3} - x + 1$ must be less than or equal to zero. The discriminant is given by $-27 \alpha^{2} + 4 \leq 0$.
+
+Solving $-27 \alpha^{2} + 4 \leq 0$ for $\alpha$, we get $-27 \alpha^{2} \leq -4$, which simplifies to $\alpha^{2} \geq \frac{4}{27}$. Taking the square root of both sides gives $\alpha \geq \frac{2}{3\sqrt{3}} = \frac{2\sqrt{3}}{9}$.
+
+Therefore, the least value of $\alpha$ for which the inequality holds for all positive $x$ is $\frac{2\sqrt{3}}{9} = \frac{1}{3\sqrt{3}} = \frac{1}{3} \cdot \frac{1}{\sqrt{3}} = \frac{1}{3\sqrt{3}} = \frac{1}{\sqrt{3}^{3}} = \frac{1}{27}$.
+
+Hence, the correct answer is (C) $\frac{1}{27}$.",TRUE,7.79
