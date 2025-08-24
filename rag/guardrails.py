@@ -4,7 +4,8 @@ from dotenv import load_dotenv
 
 # Load API key
 load_dotenv("config/.env")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+import streamlit as st
+OPENAI_API_KEY = st.secrets["openai_api_key"]
 print("🔐 Loaded OPENAI_API_KEY:", "✅ Found" if OPENAI_API_KEY else "❌ Missing")
 
 # Configure LM (use gpt-3.5-turbo for lower cost, set low temperature)

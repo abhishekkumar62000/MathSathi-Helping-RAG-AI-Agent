@@ -19,8 +19,9 @@ from rag.guardrails import OutputValidator, InputValidator
 
 # Load environment variables
 load_dotenv("config/.env")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+import streamlit as st
+OPENAI_API_KEY = st.secrets["openai_api_key"]
+TAVILY_API_KEY = st.secrets["tavily_api_key"]
 
 # Load DSPy guardrails
 output_validator = OutputValidator()

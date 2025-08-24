@@ -267,7 +267,7 @@ with tab5:
     st.markdown("If you wrote your question on the whiteboard, download it as PNG and upload below for OCR:")
     uploaded_whiteboard = st.file_uploader("Upload your whiteboard PNG for OCR", type=["png"], key="whiteboard_ocr_upload")
     ocr_text = None
-    ocr_api_key = "K84147951588957"  # Use hardcoded OCR.Space API key for automatic OCR
+    ocr_api_key = st.secrets["ocr_space_api_key"]  # Fetch OCR.Space API key from Streamlit secrets.toml
     if uploaded_whiteboard:
         image = Image.open(uploaded_whiteboard)
         buf = io.BytesIO()

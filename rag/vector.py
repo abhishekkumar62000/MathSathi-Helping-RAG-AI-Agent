@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 import pandas as pd
 import os
 
+import streamlit as st
 # ✅ Load environment variables
 load_dotenv("config/.env")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["openai_api_key"]
 
 # ✅ Load JEEBench dataset as Documents
 def load_jeebench_documents():
