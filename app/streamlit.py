@@ -16,7 +16,7 @@ from rag.query_router import answer_math_question
 import base64
 # --- Custom Dark Theme and Animations ---
 
-#SIDEBAR LOGO, AI IMAGE, AND DEVELOPER INFO
+# SIDEBAR LOGO, AI IMAGE, AND DEVELOPER INFO
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 logo_path = os.path.join(project_root, "Logo.png")
 ai_logo_path = os.path.join(project_root, "AI.png")
