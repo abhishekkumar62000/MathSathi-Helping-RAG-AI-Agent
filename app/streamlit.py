@@ -7,9 +7,79 @@ import pandas as pd
 
 # Add root to import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from app.benchmark import benchmark_math_agent  # Add this import
 from data.load_gsm8k_data import load_jeebench_dataset
 from rag.query_router import answer_math_question
+import base64
+# --- Custom Dark Theme and Animations ---
+"""
+--- SIDEBAR LOGO, AI IMAGE, AND DEVELOPER INFO ---
+"""
+logo_path = os.path.join(os.path.dirname(__file__), "Logo.png")
+ai_logo_path = os.path.join(os.path.dirname(__file__), "AI.png")
+dev_pic_path = os.path.join(os.path.dirname(__file__), "pic.jpg")
+encoded_logo = None
+encoded_ai_logo = None
+encoded_dev_pic = None
+if os.path.exists(logo_path):
+    with open(logo_path, "rb") as image_file:
+        encoded_logo = base64.b64encode(image_file.read()).decode()
+if os.path.exists(ai_logo_path):
+    with open(ai_logo_path, "rb") as image_file:
+        encoded_ai_logo = base64.b64encode(image_file.read()).decode()
+if os.path.exists(dev_pic_path):
+    with open(dev_pic_path, "rb") as image_file:
+        encoded_dev_pic = base64.b64encode(image_file.read()).decode()
+
+with st.sidebar:
+    st.markdown(
+        f"""
+        <style>
+        @keyframes colorfulGlow {{
+            0% {{ box-shadow: 0 0 24px #ffd200, 0 0 0px #00c6ff; filter: hue-rotate(0deg); }}
+            25% {{ box-shadow: 0 0 32px #00c6ff, 0 0 12px #f7971e; filter: hue-rotate(90deg); }}
+            50% {{ box-shadow: 0 0 40px #f7971e, 0 0 24px #ffd200; filter: hue-rotate(180deg); }}
+            75% {{ box-shadow: 0 0 32px #00c6ff, 0 0 12px #ffd200; filter: hue-rotate(270deg); }}
+            100% {{ box-shadow: 0 0 24px #ffd200, 0 0 0px #00c6ff; filter: hue-rotate(360deg); }}
+        }}
+        .colorful-animated-logo {{
+            animation: colorfulGlow 2.5s linear infinite;
+            transition: box-shadow 0.3s, filter 0.3s;
+            border-radius: 30%;
+            box-shadow: 0 2px 12px #00c6ff;
+            border: 2px solid #ffd200;
+            background: #232526;
+            object-fit: cover;
+        }}
+        .sidebar-logo {{
+            text-align: center;
+            margin-bottom: 12px;
+        }}
+        .sidebar-AI {{
+            text-align: center;
+            margin-bottom: 8px;
+        }}
+        .sidebar-dev {{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }}
+        </style>
+        <div class='sidebar-logo'>
+            {f"<img class='colorful-animated-logo' src='data:image/png;base64,{encoded_logo}' alt='Logo' style='width:120px;height:120px;'>" if encoded_logo else "<div style='font-size:2em;'>🚀</div>"}
+            <div style='color:#00c6ff;font-size:1.1em;font-family:sans-serif;font-weight:bold;text-shadow:0 1px 6px #ffd200;margin-top:8px;'>Professor.Team.Agent</div>
+        </div>
+        <div class='sidebar-AI'>
+            {f"<img src='data:image/png;base64,{encoded_ai_logo}' alt='AI' style='width:110px;height:110px;border-radius:30%;box-shadow:0 2px 12px #00c6ff;border:2px solid #ffd200;margin-bottom:8px;background:#232526;object-fit:cover;'>" if encoded_ai_logo else "<div style='color:#ff4b4b;'>AI.png not found</div>"}
+        </div>
+        <div class='sidebar-dev'>
+            <div style='color:#ffd200;font-size:1.05em;font-family:sans-serif;font-weight:bold;margin-bottom:4px;'>👨‍💻 Developer: Abhishek Yadav</div>
+            {f"<img src='data:image/jpeg;base64,{encoded_dev_pic}' alt='Abhishek Yadav' style='width:70px;height:70px;border-radius:50%;box-shadow:0 2px 8px #00c6ff;border:2px solid #ffd200;margin-bottom:4px;object-fit:cover;'>" if encoded_dev_pic else "<div style='color:#ff4b4b;'>pic.jpg not found</div>"}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 
 # --- Custom Dark Theme and Animations ---
