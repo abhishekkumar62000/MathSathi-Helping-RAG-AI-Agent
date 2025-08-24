@@ -74,7 +74,7 @@ with st.sidebar:
             <div style='color:#00c6ff;font-size:1.1em;font-family:sans-serif;font-weight:bold;text-shadow:0 1px 6px #ffd200;margin-top:8px;'>Professor.Team.Agent</div>
         </div>
         <div class='sidebar-AI'>
-            {f"<img src='data:image/png;base64,{encoded_ai_logo}' alt='AI' style='width:170px;height:170px;border-radius:30%;box-shadow:0 2px 12px #00c6ff;border:2px solid #ffd200;margin-bottom:8px;background:#232526;object-fit:cover;'>" if encoded_ai_logo else "<div style='color:#ff4b4b;'>AI.png not found</div>"}
+            {f"<img src='data:image/png;base64,{encoded_ai_logo}' alt='AI' style='width:210px;height:210px;margin-bottom:8px;object-fit:cover;'>" if encoded_ai_logo else "<div style='color:#ff4b4b;'>AI.png not found</div>"}
         </div>
         <div class='sidebar-dev'>
             <div style='color:#ffd200;font-size:1.05em;font-family:sans-serif;font-weight:bold;margin-bottom:4px;'>👨‍💻 Developer: Abhishek Yadav</div>
