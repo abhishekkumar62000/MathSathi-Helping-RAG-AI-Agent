@@ -1,4 +1,6 @@
+
 import streamlit as st
+st.set_page_config(page_title="Math Agent 🧮", layout="wide")
 from streamlit.components.v1 import html
 import sys
 import os
@@ -82,8 +84,7 @@ with st.sidebar:
     )
 
 
-# --- Custom Dark Theme and Animations ---
-st.set_page_config(page_title="Math Agent 🧮", layout="wide")
+
 
 
 # --- Playful Neon Blue-Pink-Orange Theme ---
