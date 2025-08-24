@@ -18,9 +18,10 @@ import base64
 """
 --- SIDEBAR LOGO, AI IMAGE, AND DEVELOPER INFO ---
 """
-logo_path = os.path.join(os.path.dirname(__file__), "Logo.png")
-ai_logo_path = os.path.join(os.path.dirname(__file__), "AI.png")
-dev_pic_path = os.path.join(os.path.dirname(__file__), "pic.jpg")
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+logo_path = os.path.join(project_root, "Logo.png")
+ai_logo_path = os.path.join(project_root, "AI.png")
+dev_pic_path = os.path.join(project_root, "pic.jpg")
 encoded_logo = None
 encoded_ai_logo = None
 encoded_dev_pic = None
