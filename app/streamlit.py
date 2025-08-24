@@ -613,7 +613,7 @@ with tab2:
     st.subheader("📁 View Collected Feedback")
     try:
         with open("logs/feedback_log.json", "r") as f:
-            feedback_logs = json.load(f)
+                                {f"<img src='data:image/jpeg;base64,{encoded_dev_pic}' alt='Abhishek Yadav' style='width:100%;max-width:180px;display:block;margin-left:auto;margin-right:auto;margin-bottom:4px;'>" if encoded_dev_pic else "<div style='color:#ff4b4b;'>pic.jpg not found</div>"}
         st.success("Loaded feedback log.")
         st.dataframe(pd.DataFrame(feedback_logs))
     except Exception as e:
