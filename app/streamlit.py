@@ -70,7 +70,7 @@ with st.sidebar:
         </style>
         <div class='sidebar-logo'>
             {f"<img class='colorful-animated-logo' src='data:image/png;base64,{encoded_logo}' alt='Logo' style='width:120px;height:120px;'>" if encoded_logo else "<div style='font-size:2em;'>🚀</div>"}
-            <div style='color:#00c6ff;font-size:1.1em;font-family:sans-serif;font-weight:bold;text-shadow:0 1px 6px #ffd200;margin-top:8px;'>Professor.Team.Agent</div>
+            <div style='color:#00c6ff;font-size:1.1em;font-family:sans-serif;font-weight:bold;text-shadow:0 1px 6px #ffd200;margin-top:8px;'>Math.Team.Agent</div>
         </div>
         <div class='sidebar-AI'>
             {f"<img src='data:image/png;base64,{encoded_ai_logo}' alt='AI' style='width:210px;height:210px;margin-bottom:8px;object-fit:cover;'>" if encoded_ai_logo else "<div style='color:#ff4b4b;'>AI.png not found</div>"}
