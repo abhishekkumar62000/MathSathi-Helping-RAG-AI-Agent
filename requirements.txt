@@ -12,3 +12,4 @@ python-dotenv==1.1.0
 streamlit==1.44.1
 pandas==2.2.3
 requests==2.32.3
+streamlit-drawable-canvas
